@@ -1,0 +1,10 @@
+[2025-10-22 11:51:04,351] 60 root - INFO - Entered the load_object method of main_utils
+[2025-10-22 11:51:05,095] 64 root - INFO - Exited the load_object method of main_utils
+[2025-10-22 11:51:05,095] 60 root - INFO - Entered the load_object method of main_utils
+[2025-10-22 11:51:05,123] 64 root - INFO - Exited the load_object method of main_utils
+[2025-10-22 11:51:05,124] 22 root - INFO - \u2705 PredictionPipeline initialized successfully.
+[2025-10-22 11:53:26,080] 74 root - INFO - Received prediction request: {'Age': 46, 'Income': 84208.0, 'LoanAmount': 129188.0, 'CreditScore': 451, 'MonthsEmployed': 26, 'NumCreditLines': 3, 'InterestRate': 21.17, 'LoanTerm': 24, 'DTIRatio': 0.31, 'Education': "Master's", 'EmploymentType': 'Unemployed', 'MaritalStatus': 'Divorced', 'HasMortgage': 'Yes', 'HasDependents': 'Yes', 'LoanPurpose': 'Auto', 'HasCoSigner': 'No', 'LoanPerCreditScore': 285.8141592920354, 'IncomePerCreditLine': 21052.0, 'InterestOverIncome': 0.0002514012920387612, 'MonthlyPayment': 5382.833333333333, 'CreditScorePerAge': 9.804347826086957, 'EmploymentStability': 0.5652173913043478, 'DTI_LoanRatio': 2.3996036783602193e-06, 'IncomePerLoanTerm': 3508.6666666666665, 'LTI': 1.534153524605738, 'YearsEmployed': 2.1666666666666665, 'EmploymentToLoanTerm': 1.0833333333333333}
+[2025-10-22 11:53:26,082] 37 root - INFO - \U0001f504 Transforming input features using preprocessor...
+[2025-10-22 11:53:26,089] 40 root - INFO - \U0001f9e0 Generating predictions using trained model...
+[2025-10-22 11:53:26,090] 43 root - INFO - \u2705 Predictions generated successfully. Shape: (1,)
+[2025-10-22 11:53:26,090] 77 root - INFO - Prediction result: 1

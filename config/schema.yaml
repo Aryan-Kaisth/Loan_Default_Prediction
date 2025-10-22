@@ -1,0 +1,37 @@
+numeric:
+  - Age
+  - Income
+  - LoanAmount
+  - CreditScore
+  - MonthsEmployed
+  - NumCreditLines
+  - InterestRate
+  - LoanTerm
+  - DTIRatio
+  - LTI
+  - YearsEmployed
+  - EmploymentToLoanTerm
+  - LoanPerCreditScore
+  - IncomePerCreditLine
+  - InterestOverIncome
+  - MonthlyPayment
+  - CreditScorePerAge
+  - EmploymentStability
+  - DTI_LoanRatio
+  - IncomePerLoanTerm
+
+ordinal: 
+  - Education
+
+nominal:
+  - EmploymentType
+  - MaritalStatus
+  - HasMortgage
+  - HasDependents
+  - LoanPurpose
+  - HasCoSigner
+
+target: Default
+
+drop_col: 
+  - LoanID

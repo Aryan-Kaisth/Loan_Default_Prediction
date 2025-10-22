@@ -1,0 +1,51 @@
+[2025-10-22 11:47:46,471] 43 root - INFO - ===== Data Ingestion Process Started =====
+[2025-10-22 11:47:51,556] 35 root - INFO - Fetched 255347 rows from table 'loan_default'
+[2025-10-22 11:47:51,577] 47 root - INFO - Data shape: (255347, 18)
+[2025-10-22 11:47:51,578] 48 root - INFO - Entered the save_csv_file method of main_utils
+[2025-10-22 11:47:52,319] 51 root - INFO - Exited the save_csv_file method of main_utils
+[2025-10-22 11:47:52,319] 51 root - INFO - Raw data saved at artifacts\data_ingestion\raw.csv with shape (255347, 18)
+[2025-10-22 11:47:52,319] 54 root - INFO - Splitting data into train and test sets...
+[2025-10-22 11:47:52,407] 48 root - INFO - Entered the save_csv_file method of main_utils
+[2025-10-22 11:47:53,137] 51 root - INFO - Exited the save_csv_file method of main_utils
+[2025-10-22 11:47:53,137] 63 root - INFO - Train data saved at artifacts\data_ingestion\train.csv with shape (204277, 18)
+[2025-10-22 11:47:53,137] 48 root - INFO - Entered the save_csv_file method of main_utils
+[2025-10-22 11:47:53,311] 51 root - INFO - Exited the save_csv_file method of main_utils
+[2025-10-22 11:47:53,311] 65 root - INFO - Test data saved at artifacts\data_ingestion\test.csv with shape (51070, 18)
+[2025-10-22 11:47:53,311] 67 root - INFO - ===== Data Ingestion Completed Successfully =====
+[2025-10-22 11:47:53,474] 40 root - INFO - Schema loaded successfully. Drop: ['LoanID'], Numerical: ['Age', 'Income', 'LoanAmount', 'CreditScore', 'MonthsEmployed', 'NumCreditLines', 'InterestRate', 'LoanTerm', 'DTIRatio', 'LTI', 'YearsEmployed', 'EmploymentToLoanTerm', 'LoanPerCreditScore', 'IncomePerCreditLine', 'InterestOverIncome', 'MonthlyPayment', 'CreditScorePerAge', 'EmploymentStability', 'DTI_LoanRatio', 'IncomePerLoanTerm'], Ordinal: ['Education'], Nominal: ['EmploymentType', 'MaritalStatus', 'HasMortgage', 'HasDependents', 'LoanPurpose', 'HasCoSigner'], Target: Default
+[2025-10-22 11:47:53,474] 104 root - INFO - Reading train and test data
+[2025-10-22 11:47:53,474] 24 root - INFO - Entered the read_csv_file method of main_utils
+[2025-10-22 11:47:53,759] 28 root - INFO - Exited the read_csv_file method of main_utils
+[2025-10-22 11:47:53,759] 24 root - INFO - Entered the read_csv_file method of main_utils
+[2025-10-22 11:47:53,854] 28 root - INFO - Exited the read_csv_file method of main_utils
+[2025-10-22 11:47:53,854] 108 root - INFO - Applying feature engineering on train and test data
+[2025-10-22 11:47:53,920] 117 root - INFO - Creating preprocessing Pipeline
+[2025-10-22 11:47:53,921] 120 root - INFO - Fitting preprocessor on training data
+[2025-10-22 11:47:54,391] 124 root - INFO - Saving transformed data and preprocessor
+[2025-10-22 11:47:54,406] 79 root - INFO - Entered the save_numpy_array_data method of main_utils
+[2025-10-22 11:47:54,461] 84 root - INFO - Exited the save_numpy_array_data method of main_utils
+[2025-10-22 11:47:54,466] 79 root - INFO - Entered the save_numpy_array_data method of main_utils
+[2025-10-22 11:47:54,473] 84 root - INFO - Exited the save_numpy_array_data method of main_utils
+[2025-10-22 11:47:54,473] 105 root - INFO - Entered the save_object method of utils
+[2025-10-22 11:47:54,476] 112 root - INFO - Exited the save_object method of utils
+[2025-10-22 11:47:54,476] 129 root - INFO - Data transformation completed and saved successfully at artifacts\data_transformation\preprocessor.pkl
+[2025-10-22 11:47:54,483] 27 root - INFO - Model training started
+[2025-10-22 11:47:54,830] 33 root - INFO - Model training completed
+[2025-10-22 11:47:54,853] 43 root - INFO - Model Accuracy: 0.18838848639122774
+[2025-10-22 11:47:54,853] 44 root - INFO - Precision Score:
+0.12381214417236344
+[2025-10-22 11:47:54,854] 45 root - INFO - Recall Score:
+0.9915254237288136
+[2025-10-22 11:47:54,854] 46 root - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.99      0.08      0.15     45170
+           1       0.12      0.99      0.22      5900
+
+    accuracy                           0.19     51070
+   macro avg       0.56      0.54      0.19     51070
+weighted avg       0.89      0.19      0.16     51070
+
+[2025-10-22 11:47:54,854] 105 root - INFO - Entered the save_object method of utils
+[2025-10-22 11:47:54,855] 112 root - INFO - Exited the save_object method of utils
+[2025-10-22 11:47:54,855] 50 root - INFO - Trained model saved at: artifacts\model_trainer\logistic.pkl
