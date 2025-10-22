@@ -55,7 +55,6 @@ pyparsing==3.2.5
 python-dateutil
 python-dotenv==1.1.1
 pytz==2025.2
-pywin32
 PyYAML==6.0.3
 pyzmq
 scikit-learn==1.7.2
